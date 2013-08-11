@@ -1,0 +1,516 @@
+2013-08-05 07:00:03,724 Py3-ExM MainThread __init__ INFO ExControl Starting.. Maxthread 3 on do.jhxs.org:25.
+2013-08-05 07:00:03,724 Py3-ExM MainThread _init_db INFO Connecting MongoDB 
+2013-08-05 07:00:03,735 Py3-ExM MainThread _init_relay INFO Initiating Relay Thread.
+2013-08-05 07:00:03,736 Py3-ExM MainThread __init__ INFO ExRelay start and running. do.jhxs.org:25
+2013-08-05 07:00:03,918 Py3-ExM MainThread loop INFO ExControl main loop starting.
+2013-08-05 07:00:03,919 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 07:04:12,266 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from service@ibeidou.net to avastms@bosp.ibeidou.net, aka avastms@163.com .
+2013-08-05 07:04:12,267 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 07:04:12,267 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 07:04:12,267 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 07:04:12,267 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 07:04:12,268 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 07:04:12,268 Py3-ExM 163.com __init__ INFO ExSender started. 1 mails to 163.com.
+2013-08-05 07:04:12,268 Py3-ExM 163.com _connect INFO Initiating SMTP connection for domain 163.com.
+2013-08-05 07:04:13,036 Py3-ExM 163.com _connect INFO Prefered MX server 163mx01.mxmail.netease.com connected.
+2013-08-05 07:04:20,980 Py3-ExM 163.com send INFO Mail successfully sent to avastms@163.com.
+2013-08-05 07:04:20,980 Py3-ExM 163.com _close INFO Closing smtp connection for 163.com.
+2013-08-05 07:04:20,981 Py3-ExM 163.com sender_routine INFO Transaction for 163.com is over.
+2013-08-05 07:04:20,981 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 07:40:40,200 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from lz349784273@sina.cn to lizhuo@bosp.ibeidou.net, aka 349784273@qq.com .
+2013-08-05 07:40:40,201 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 07:40:40,201 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 07:40:40,201 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 07:40:40,203 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 07:40:40,203 Py3-ExM qq.com __init__ INFO ExSender started. 1 mails to qq.com.
+2013-08-05 07:40:40,203 Py3-ExM qq.com _connect INFO Initiating SMTP connection for domain qq.com.
+2013-08-05 07:40:40,204 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 07:40:40,204 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 07:40:40,204 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 07:40:40,204 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 07:40:40,204 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 07:40:40,629 Py3-ExM qq.com _connect INFO Prefered MX server mx3.qq.com connected.
+2013-08-05 07:40:41,778 Py3-ExM qq.com send INFO Mail successfully sent to 349784273@qq.com.
+2013-08-05 07:40:41,778 Py3-ExM qq.com _close INFO Closing smtp connection for qq.com.
+2013-08-05 07:40:41,778 Py3-ExM qq.com sender_routine INFO Transaction for qq.com is over.
+2013-08-05 07:40:41,779 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 07:45:54,077 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from lz349784273@sina.cn to lizhuo@bosp.ibeidou.net, aka 349784273@qq.com .
+2013-08-05 07:45:54,077 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 07:45:54,078 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 07:45:54,078 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 07:45:54,078 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 07:45:54,078 Py3-ExM qq.com __init__ INFO ExSender started. 1 mails to qq.com.
+2013-08-05 07:45:54,079 Py3-ExM qq.com _connect INFO Initiating SMTP connection for domain qq.com.
+2013-08-05 07:45:54,079 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 07:45:54,079 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 07:45:54,079 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 07:45:54,080 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 07:45:54,080 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 07:45:54,445 Py3-ExM qq.com _connect INFO Prefered MX server mx3.qq.com connected.
+2013-08-05 07:45:56,987 Py3-ExM qq.com send ERROR Failure sending mail to 349784273@qq.com. Remote MX Rejected.
+2013-08-05 07:45:56,987 Py3-ExM qq.com _close INFO Closing smtp connection for qq.com.
+2013-08-05 07:45:56,987 Py3-ExM qq.com sender_routine WARNING 1 Mail Rejected by qq.com
+2013-08-05 07:45:56,987 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 07:48:45,046 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from service@ibeidou.net to avastms@bosp.ibeidou.net, aka avastms@163.com .
+2013-08-05 07:48:45,046 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 07:48:45,046 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 07:48:45,046 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 07:48:45,047 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 07:48:45,047 Py3-ExM qq.com sender_routine INFO Sendlist empty. Clearing Cache for qq.com
+2013-08-05 07:48:45,047 Py3-ExM qq.com clear_cache INFO Cleared MailCache for qq.com
+2013-08-05 07:48:45,047 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 07:48:45,047 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 07:48:45,047 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 07:48:45,048 Py3-ExM 163.com __init__ INFO ExSender started. 1 mails to 163.com.
+2013-08-05 07:48:45,048 Py3-ExM 163.com _connect INFO Initiating SMTP connection for domain 163.com.
+2013-08-05 07:48:45,898 Py3-ExM 163.com _connect INFO Prefered MX server 163mx01.mxmail.netease.com connected.
+2013-08-05 07:48:49,221 Py3-ExM 163.com send INFO Mail successfully sent to avastms@163.com.
+2013-08-05 07:48:49,222 Py3-ExM 163.com _close INFO Closing smtp connection for 163.com.
+2013-08-05 07:48:49,222 Py3-ExM 163.com sender_routine INFO Transaction for 163.com is over.
+2013-08-05 07:48:49,222 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 08:19:58,876 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from avastms@ghostunix.org to lizhuo@bosp.ibeidou.net, aka 349784273@qq.com .
+2013-08-05 08:19:58,876 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 08:19:58,876 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 08:19:58,876 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 08:19:58,877 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 08:19:58,877 Py3-ExM qq.com __init__ INFO ExSender started. 1 mails to qq.com.
+2013-08-05 08:19:58,877 Py3-ExM qq.com _connect INFO Initiating SMTP connection for domain qq.com.
+2013-08-05 08:19:58,878 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 08:19:58,878 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 08:19:58,878 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 08:19:58,878 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 08:19:58,878 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 08:19:59,406 Py3-ExM qq.com _connect INFO Prefered MX server mx3.qq.com connected.
+2013-08-05 08:20:06,807 Py3-ExM qq.com send INFO Mail successfully sent to 349784273@qq.com.
+2013-08-05 08:20:06,808 Py3-ExM qq.com _close INFO Closing smtp connection for qq.com.
+2013-08-05 08:20:06,808 Py3-ExM qq.com sender_routine INFO Transaction for qq.com is over.
+2013-08-05 08:20:06,808 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 08:21:16,968 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from avastms@ghostunix.org to zhoulingxi@bosp.ibeidou.net, aka ling.zhou@ibeidou.net .
+2013-08-05 08:21:16,968 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 08:21:16,968 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 08:21:16,968 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 08:21:16,969 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 08:21:16,969 Py3-ExM qq.com sender_routine INFO Sendlist empty. Clearing Cache for qq.com
+2013-08-05 08:21:16,969 Py3-ExM qq.com clear_cache INFO Cleared MailCache for qq.com
+2013-08-05 08:21:16,969 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 08:21:16,970 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 08:21:16,970 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 08:21:16,970 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 08:21:16,970 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 08:21:16,970 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 08:21:16,970 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-05 08:21:16,970 Py3-ExM ibeidou.net __init__ INFO ExSender started. 1 mails to ibeidou.net.
+2013-08-05 08:21:16,971 Py3-ExM ibeidou.net _connect INFO Initiating SMTP connection for domain ibeidou.net.
+2013-08-05 08:21:17,541 Py3-ExM ibeidou.net _connect INFO Prefered MX server mxbiz1.qq.com connected.
+2013-08-05 08:21:20,594 Py3-ExM ibeidou.net send INFO Mail successfully sent to ling.zhou@ibeidou.net.
+2013-08-05 08:21:20,594 Py3-ExM ibeidou.net _close INFO Closing smtp connection for ibeidou.net.
+2013-08-05 08:21:20,594 Py3-ExM ibeidou.net sender_routine INFO Transaction for ibeidou.net is over.
+2013-08-05 08:21:20,594 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-05 13:18:43,760 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from lz349784273@sina.cn to lizhuo@bosp.ibeidou.net, aka 349784273@qq.com .
+2013-08-05 13:18:43,761 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 13:18:43,761 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 13:18:43,761 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 13:18:43,762 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 13:18:43,762 Py3-ExM qq.com __init__ INFO ExSender started. 1 mails to qq.com.
+2013-08-05 13:18:43,762 Py3-ExM qq.com _connect INFO Initiating SMTP connection for domain qq.com.
+2013-08-05 13:18:43,763 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 13:18:43,763 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 13:18:43,763 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 13:18:43,763 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 13:18:43,763 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 13:18:43,763 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-05 13:18:43,764 Py3-ExM ibeidou.net sender_routine INFO Sendlist empty. Clearing Cache for ibeidou.net
+2013-08-05 13:18:43,764 Py3-ExM ibeidou.net clear_cache INFO Cleared MailCache for ibeidou.net
+2013-08-05 13:18:43,764 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-05 13:18:44,193 Py3-ExM qq.com _connect INFO Prefered MX server mx3.qq.com connected.
+2013-08-05 13:18:47,364 Py3-ExM qq.com send ERROR Failure sending mail to 349784273@qq.com. Remote MX Rejected.
+2013-08-05 13:18:47,364 Py3-ExM qq.com _close INFO Closing smtp connection for qq.com.
+2013-08-05 13:18:47,364 Py3-ExM qq.com sender_routine WARNING 1 Mail Rejected by qq.com
+2013-08-05 13:18:47,365 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 13:57:43,846 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from avastms@163.com to lizhuo@bosp.ibeidou.net, aka 349784273@qq.com .
+2013-08-05 13:57:43,846 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 13:57:43,846 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 13:57:43,846 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 13:57:43,847 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 13:57:43,847 Py3-ExM qq.com __init__ INFO ExSender started. 1 mails to qq.com.
+2013-08-05 13:57:43,847 Py3-ExM qq.com _connect INFO Initiating SMTP connection for domain qq.com.
+2013-08-05 13:57:43,848 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 13:57:43,848 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 13:57:43,848 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 13:57:43,848 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 13:57:43,849 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 13:57:43,849 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-05 13:57:43,849 Py3-ExM ibeidou.net sender_routine INFO Sendlist empty. Clearing Cache for ibeidou.net
+2013-08-05 13:57:43,849 Py3-ExM ibeidou.net clear_cache INFO Cleared MailCache for ibeidou.net
+2013-08-05 13:57:43,849 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-05 13:57:44,413 Py3-ExM qq.com _connect INFO Prefered MX server mx3.qq.com connected.
+2013-08-05 13:57:47,478 Py3-ExM qq.com send ERROR Failure sending mail to 349784273@qq.com. Remote MX Rejected.
+2013-08-05 13:57:47,479 Py3-ExM qq.com _close INFO Closing smtp connection for qq.com.
+2013-08-05 13:57:47,479 Py3-ExM qq.com sender_routine WARNING 1 Mail Rejected by qq.com
+2013-08-05 13:57:47,479 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 13:59:23,006 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from christinexiaomeng@gmail.com to christinexiaomeng@bosp.ibeidou.net, aka christinexiaomeng@gmail.com .
+2013-08-05 13:59:23,007 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 13:59:23,007 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 13:59:23,007 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 13:59:23,007 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 13:59:23,007 Py3-ExM qq.com sender_routine INFO Sendlist empty. Clearing Cache for qq.com
+2013-08-05 13:59:23,007 Py3-ExM qq.com clear_cache INFO Cleared MailCache for qq.com
+2013-08-05 13:59:23,008 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 13:59:23,008 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 13:59:23,008 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 13:59:23,008 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 13:59:23,008 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 13:59:23,008 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is up.
+2013-08-05 13:59:23,008 Py3-ExM gmail.com __init__ INFO ExSender started. 1 mails to gmail.com.
+2013-08-05 13:59:23,009 Py3-ExM gmail.com _connect INFO Initiating SMTP connection for domain gmail.com.
+2013-08-05 13:59:23,009 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 13:59:23,009 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-05 13:59:23,010 Py3-ExM ibeidou.net sender_routine INFO Sendlist empty. Clearing Cache for ibeidou.net
+2013-08-05 13:59:23,010 Py3-ExM ibeidou.net clear_cache INFO Cleared MailCache for ibeidou.net
+2013-08-05 13:59:23,010 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-05 13:59:23,198 Py3-ExM gmail.com _connect INFO Prefered MX server gmail-smtp-in.l.google.com connected.
+2013-08-05 13:59:23,665 Py3-ExM gmail.com send INFO Mail successfully sent to christinexiaomeng@gmail.com.
+2013-08-05 13:59:23,665 Py3-ExM gmail.com _close INFO Closing smtp connection for gmail.com.
+2013-08-05 13:59:23,665 Py3-ExM gmail.com sender_routine INFO Transaction for gmail.com is over.
+2013-08-05 13:59:23,666 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is terminating.
+2013-08-05 14:05:57,065 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from avastms@163.com to avastms@bosp.ibeidou.net, aka avastms@ibeidou.net .
+2013-08-05 14:05:57,066 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 14:05:57,066 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 14:05:57,066 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 14:05:57,066 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 14:05:57,067 Py3-ExM qq.com sender_routine INFO Sendlist empty. Clearing Cache for qq.com
+2013-08-05 14:05:57,067 Py3-ExM qq.com clear_cache INFO Cleared MailCache for qq.com
+2013-08-05 14:05:57,067 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 14:05:57,067 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 14:05:57,067 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 14:05:57,067 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 14:05:57,067 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 14:05:57,068 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is up.
+2013-08-05 14:05:57,068 Py3-ExM gmail.com sender_routine INFO Sendlist empty. Clearing Cache for gmail.com
+2013-08-05 14:05:57,068 Py3-ExM gmail.com clear_cache INFO Cleared MailCache for gmail.com
+2013-08-05 14:05:57,068 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is terminating.
+2013-08-05 14:05:57,068 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 14:05:57,068 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-05 14:05:57,068 Py3-ExM ibeidou.net __init__ INFO ExSender started. 1 mails to ibeidou.net.
+2013-08-05 14:05:57,068 Py3-ExM ibeidou.net _connect INFO Initiating SMTP connection for domain ibeidou.net.
+2013-08-05 14:05:57,772 Py3-ExM ibeidou.net _connect INFO Prefered MX server mxbiz1.qq.com connected.
+2013-08-05 14:05:59,294 Py3-ExM ibeidou.net send INFO Mail successfully sent to avastms@ibeidou.net.
+2013-08-05 14:05:59,294 Py3-ExM ibeidou.net _close INFO Closing smtp connection for ibeidou.net.
+2013-08-05 14:05:59,294 Py3-ExM ibeidou.net sender_routine INFO Transaction for ibeidou.net is over.
+2013-08-05 14:05:59,295 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-05 14:07:15,014 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from avastms@163.com to avastms@bosp.ibeidou.net, aka 376549635@qq.com .
+2013-08-05 14:07:15,014 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 14:07:15,014 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 14:07:15,014 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 14:07:15,015 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 14:07:15,015 Py3-ExM qq.com __init__ INFO ExSender started. 1 mails to qq.com.
+2013-08-05 14:07:15,015 Py3-ExM qq.com _connect INFO Initiating SMTP connection for domain qq.com.
+2013-08-05 14:07:15,016 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 14:07:15,016 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 14:07:15,016 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 14:07:15,017 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 14:07:15,017 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is up.
+2013-08-05 14:07:15,017 Py3-ExM gmail.com sender_routine INFO Sendlist empty. Clearing Cache for gmail.com
+2013-08-05 14:07:15,017 Py3-ExM gmail.com clear_cache INFO Cleared MailCache for gmail.com
+2013-08-05 14:07:15,017 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is terminating.
+2013-08-05 14:07:15,018 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 14:07:15,018 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-05 14:07:15,018 Py3-ExM ibeidou.net sender_routine INFO Sendlist empty. Clearing Cache for ibeidou.net
+2013-08-05 14:07:15,018 Py3-ExM ibeidou.net clear_cache INFO Cleared MailCache for ibeidou.net
+2013-08-05 14:07:15,018 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-05 14:07:15,478 Py3-ExM qq.com _connect INFO Prefered MX server mx3.qq.com connected.
+2013-08-05 14:07:18,356 Py3-ExM qq.com send INFO Mail successfully sent to 376549635@qq.com.
+2013-08-05 14:07:18,356 Py3-ExM qq.com _close INFO Closing smtp connection for qq.com.
+2013-08-05 14:07:18,356 Py3-ExM qq.com sender_routine INFO Transaction for qq.com is over.
+2013-08-05 14:07:18,356 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 14:10:24,909 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from avastms@163.com to lizhuo@bosp.ibeidou.net, aka 349784273@qq.com .
+2013-08-05 14:10:24,909 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 14:10:24,909 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 14:10:24,909 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 14:10:24,910 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 14:10:24,910 Py3-ExM qq.com __init__ INFO ExSender started. 1 mails to qq.com.
+2013-08-05 14:10:24,910 Py3-ExM qq.com _connect INFO Initiating SMTP connection for domain qq.com.
+2013-08-05 14:10:24,910 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 14:10:24,910 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 14:10:24,910 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 14:10:24,911 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 14:10:24,911 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is up.
+2013-08-05 14:10:24,911 Py3-ExM gmail.com sender_routine INFO Sendlist empty. Clearing Cache for gmail.com
+2013-08-05 14:10:24,911 Py3-ExM gmail.com clear_cache INFO Cleared MailCache for gmail.com
+2013-08-05 14:10:24,911 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is terminating.
+2013-08-05 14:10:24,911 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 14:10:24,911 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-05 14:10:24,911 Py3-ExM ibeidou.net sender_routine INFO Sendlist empty. Clearing Cache for ibeidou.net
+2013-08-05 14:10:24,912 Py3-ExM ibeidou.net clear_cache INFO Cleared MailCache for ibeidou.net
+2013-08-05 14:10:24,912 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-05 14:10:25,472 Py3-ExM qq.com _connect INFO Prefered MX server mx3.qq.com connected.
+2013-08-05 14:10:29,068 Py3-ExM qq.com send ERROR Failure sending mail to 349784273@qq.com. Remote MX Rejected.
+2013-08-05 14:10:29,068 Py3-ExM qq.com _close INFO Closing smtp connection for qq.com.
+2013-08-05 14:10:29,068 Py3-ExM qq.com sender_routine WARNING 1 Mail Rejected by qq.com
+2013-08-05 14:10:29,069 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 14:17:07,238 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from avastms@163.com to lizhuo@bosp.ibeidou.net, aka 349784273@qq.com .
+2013-08-05 14:17:07,238 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 14:17:07,238 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 14:17:07,238 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 14:17:07,239 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 14:17:07,239 Py3-ExM qq.com __init__ INFO ExSender started. 1 mails to qq.com.
+2013-08-05 14:17:07,239 Py3-ExM qq.com _connect INFO Initiating SMTP connection for domain qq.com.
+2013-08-05 14:17:07,240 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 14:17:07,240 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 14:17:07,240 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 14:17:07,240 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 14:17:07,241 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is up.
+2013-08-05 14:17:07,241 Py3-ExM gmail.com sender_routine INFO Sendlist empty. Clearing Cache for gmail.com
+2013-08-05 14:17:07,241 Py3-ExM gmail.com clear_cache INFO Cleared MailCache for gmail.com
+2013-08-05 14:17:07,241 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is terminating.
+2013-08-05 14:17:07,241 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 14:17:07,241 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-05 14:17:07,241 Py3-ExM ibeidou.net sender_routine INFO Sendlist empty. Clearing Cache for ibeidou.net
+2013-08-05 14:17:07,241 Py3-ExM ibeidou.net clear_cache INFO Cleared MailCache for ibeidou.net
+2013-08-05 14:17:07,241 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-05 14:17:07,765 Py3-ExM qq.com _connect INFO Prefered MX server mx3.qq.com connected.
+2013-08-05 14:17:10,332 Py3-ExM qq.com send ERROR Failure sending mail to 349784273@qq.com. Remote MX Rejected.
+2013-08-05 14:17:10,332 Py3-ExM qq.com _close INFO Closing smtp connection for qq.com.
+2013-08-05 14:17:10,333 Py3-ExM qq.com sender_routine WARNING 1 Mail Rejected by qq.com
+2013-08-05 14:17:10,333 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 14:24:41,954 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from avastms@163.com to lizhuo@bosp.ibeidou.net, aka 349784273@qq.com .
+2013-08-05 14:24:41,955 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 14:24:41,955 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 14:24:41,955 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 14:24:41,956 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 14:24:41,956 Py3-ExM qq.com __init__ INFO ExSender started. 1 mails to qq.com.
+2013-08-05 14:24:41,956 Py3-ExM qq.com _connect INFO Initiating SMTP connection for domain qq.com.
+2013-08-05 14:24:41,957 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 14:24:41,957 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 14:24:41,957 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 14:24:41,957 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 14:24:41,957 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is up.
+2013-08-05 14:24:41,957 Py3-ExM gmail.com sender_routine INFO Sendlist empty. Clearing Cache for gmail.com
+2013-08-05 14:24:41,958 Py3-ExM gmail.com clear_cache INFO Cleared MailCache for gmail.com
+2013-08-05 14:24:41,958 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is terminating.
+2013-08-05 14:24:41,958 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 14:24:41,958 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-05 14:24:41,958 Py3-ExM ibeidou.net sender_routine INFO Sendlist empty. Clearing Cache for ibeidou.net
+2013-08-05 14:24:41,958 Py3-ExM ibeidou.net clear_cache INFO Cleared MailCache for ibeidou.net
+2013-08-05 14:24:41,958 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-05 14:24:42,394 Py3-ExM qq.com _connect INFO Prefered MX server mx3.qq.com connected.
+2013-08-05 14:24:45,449 Py3-ExM qq.com send ERROR Failure sending mail to 349784273@qq.com. Remote MX Rejected.
+2013-08-05 14:24:45,450 Py3-ExM qq.com _close INFO Closing smtp connection for qq.com.
+2013-08-05 14:24:45,450 Py3-ExM qq.com sender_routine WARNING 1 Mail Rejected by qq.com
+2013-08-05 14:24:45,450 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 14:25:38,679 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from avastms@163.com to avastms@bosp.ibeidou.net, aka 376549635@qq.com .
+2013-08-05 14:25:38,679 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 14:25:38,679 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 14:25:38,680 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 14:25:38,681 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 14:25:38,681 Py3-ExM qq.com __init__ INFO ExSender started. 1 mails to qq.com.
+2013-08-05 14:25:38,681 Py3-ExM qq.com _connect INFO Initiating SMTP connection for domain qq.com.
+2013-08-05 14:25:38,682 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 14:25:38,682 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 14:25:38,682 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 14:25:38,682 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 14:25:38,683 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is up.
+2013-08-05 14:25:38,683 Py3-ExM gmail.com sender_routine INFO Sendlist empty. Clearing Cache for gmail.com
+2013-08-05 14:25:38,683 Py3-ExM gmail.com clear_cache INFO Cleared MailCache for gmail.com
+2013-08-05 14:25:38,683 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is terminating.
+2013-08-05 14:25:38,683 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 14:25:38,683 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-05 14:25:38,683 Py3-ExM ibeidou.net sender_routine INFO Sendlist empty. Clearing Cache for ibeidou.net
+2013-08-05 14:25:38,683 Py3-ExM ibeidou.net clear_cache INFO Cleared MailCache for ibeidou.net
+2013-08-05 14:25:38,683 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-05 14:25:39,004 Py3-ExM qq.com _connect INFO Prefered MX server mx3.qq.com connected.
+2013-08-05 14:25:40,103 Py3-ExM qq.com send INFO Mail successfully sent to 376549635@qq.com.
+2013-08-05 14:25:40,103 Py3-ExM qq.com _close INFO Closing smtp connection for qq.com.
+2013-08-05 14:25:40,103 Py3-ExM qq.com sender_routine INFO Transaction for qq.com is over.
+2013-08-05 14:25:40,103 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 14:48:58,093 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from buctzhangtao@163.com to tao.zhang_sabrina@bosp.ibeidou.net, aka 1228689024@qq.com .
+2013-08-05 14:48:58,093 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 14:48:58,094 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 14:48:58,094 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 14:48:58,094 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 14:48:58,094 Py3-ExM qq.com __init__ INFO ExSender started. 1 mails to qq.com.
+2013-08-05 14:48:58,095 Py3-ExM qq.com _connect INFO Initiating SMTP connection for domain qq.com.
+2013-08-05 14:48:58,095 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 14:48:58,095 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 14:48:58,095 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 14:48:58,095 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 14:48:58,096 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is up.
+2013-08-05 14:48:58,096 Py3-ExM gmail.com sender_routine INFO Sendlist empty. Clearing Cache for gmail.com
+2013-08-05 14:48:58,096 Py3-ExM gmail.com clear_cache INFO Cleared MailCache for gmail.com
+2013-08-05 14:48:58,096 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is terminating.
+2013-08-05 14:48:58,096 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 14:48:58,096 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-05 14:48:58,097 Py3-ExM ibeidou.net sender_routine INFO Sendlist empty. Clearing Cache for ibeidou.net
+2013-08-05 14:48:58,097 Py3-ExM ibeidou.net clear_cache INFO Cleared MailCache for ibeidou.net
+2013-08-05 14:48:58,097 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-05 14:48:58,446 Py3-ExM qq.com _connect INFO Prefered MX server mx3.qq.com connected.
+2013-08-05 14:49:00,645 Py3-ExM qq.com send INFO Mail successfully sent to 1228689024@qq.com.
+2013-08-05 14:49:00,645 Py3-ExM qq.com _close INFO Closing smtp connection for qq.com.
+2013-08-05 14:49:00,645 Py3-ExM qq.com sender_routine INFO Transaction for qq.com is over.
+2013-08-05 14:49:00,645 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 17:06:32,467 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from yanlong.wang@ibeidou.net to chief@bosp.ibeidou.net, aka liuyicong0228@gmail.com .
+2013-08-05 17:06:32,467 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-05 17:06:32,467 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-05 17:06:32,467 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-05 17:06:32,468 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-05 17:06:32,468 Py3-ExM qq.com sender_routine INFO Sendlist empty. Clearing Cache for qq.com
+2013-08-05 17:06:32,469 Py3-ExM qq.com clear_cache INFO Cleared MailCache for qq.com
+2013-08-05 17:06:32,469 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-05 17:06:32,469 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-05 17:06:32,469 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-05 17:06:32,470 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-05 17:06:32,470 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-05 17:06:32,470 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is up.
+2013-08-05 17:06:32,470 Py3-ExM gmail.com __init__ INFO ExSender started. 1 mails to gmail.com.
+2013-08-05 17:06:32,470 Py3-ExM gmail.com _connect INFO Initiating SMTP connection for domain gmail.com.
+2013-08-05 17:06:32,471 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-05 17:06:32,471 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-05 17:06:32,471 Py3-ExM ibeidou.net sender_routine INFO Sendlist empty. Clearing Cache for ibeidou.net
+2013-08-05 17:06:32,471 Py3-ExM ibeidou.net clear_cache INFO Cleared MailCache for ibeidou.net
+2013-08-05 17:06:32,471 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-05 17:06:32,651 Py3-ExM gmail.com _connect INFO Prefered MX server gmail-smtp-in.l.google.com connected.
+2013-08-05 17:06:33,930 Py3-ExM gmail.com send INFO Mail successfully sent to liuyicong0228@gmail.com.
+2013-08-05 17:06:33,931 Py3-ExM gmail.com _close INFO Closing smtp connection for gmail.com.
+2013-08-05 17:06:33,931 Py3-ExM gmail.com sender_routine INFO Transaction for gmail.com is over.
+2013-08-05 17:06:33,931 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is terminating.
+2013-08-06 15:12:13,082 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from billy19870528@sina.com to bingli.hou@bosp.ibeidou.net, aka billy19870528@gmail.com .
+2013-08-06 15:12:13,083 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-06 15:12:13,083 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-06 15:12:13,083 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-06 15:12:13,084 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-06 15:12:13,084 Py3-ExM qq.com sender_routine INFO Sendlist empty. Clearing Cache for qq.com
+2013-08-06 15:12:13,084 Py3-ExM qq.com clear_cache INFO Cleared MailCache for qq.com
+2013-08-06 15:12:13,084 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-06 15:12:13,085 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-06 15:12:13,085 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-06 15:12:13,085 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-06 15:12:13,085 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-06 15:12:13,085 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is up.
+2013-08-06 15:12:13,086 Py3-ExM gmail.com __init__ INFO ExSender started. 1 mails to gmail.com.
+2013-08-06 15:12:13,086 Py3-ExM gmail.com _connect INFO Initiating SMTP connection for domain gmail.com.
+2013-08-06 15:12:13,086 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-06 15:12:13,086 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-06 15:12:13,087 Py3-ExM ibeidou.net sender_routine INFO Sendlist empty. Clearing Cache for ibeidou.net
+2013-08-06 15:12:13,087 Py3-ExM ibeidou.net clear_cache INFO Cleared MailCache for ibeidou.net
+2013-08-06 15:12:13,087 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-06 15:12:13,416 Py3-ExM gmail.com _connect INFO Prefered MX server gmail-smtp-in.l.google.com connected.
+2013-08-06 15:12:14,226 Py3-ExM gmail.com send INFO Mail successfully sent to billy19870528@gmail.com.
+2013-08-06 15:12:14,227 Py3-ExM gmail.com _close INFO Closing smtp connection for gmail.com.
+2013-08-06 15:12:14,227 Py3-ExM gmail.com sender_routine INFO Transaction for gmail.com is over.
+2013-08-06 15:12:14,227 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is terminating.
+2013-08-08 07:59:25,380 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from customer_service@jd.com to avastms@bosp.ibeidou.net, aka avastms@ghostunix.org .
+2013-08-08 07:59:25,380 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-08 07:59:25,381 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-08 07:59:25,381 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-08 07:59:25,381 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-08 07:59:25,382 Py3-ExM qq.com sender_routine INFO Sendlist empty. Clearing Cache for qq.com
+2013-08-08 07:59:25,382 Py3-ExM qq.com clear_cache INFO Cleared MailCache for qq.com
+2013-08-08 07:59:25,382 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-08 07:59:25,382 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-08 07:59:25,382 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-08 07:59:25,382 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-08 07:59:25,383 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-08 07:59:25,383 Py3-ExM ghostunix.org sender_routine INFO Sender Thread for domain ghostunix.org is up.
+2013-08-08 07:59:25,383 Py3-ExM ghostunix.org __init__ INFO ExSender started. 1 mails to ghostunix.org.
+2013-08-08 07:59:25,383 Py3-ExM ghostunix.org _connect INFO Initiating SMTP connection for domain ghostunix.org.
+2013-08-08 07:59:25,384 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is up.
+2013-08-08 07:59:25,384 Py3-ExM gmail.com sender_routine INFO Sendlist empty. Clearing Cache for gmail.com
+2013-08-08 07:59:25,384 Py3-ExM gmail.com clear_cache INFO Cleared MailCache for gmail.com
+2013-08-08 07:59:25,384 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is terminating.
+2013-08-08 07:59:25,384 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-08 07:59:25,384 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-08 07:59:25,385 Py3-ExM ibeidou.net sender_routine INFO Sendlist empty. Clearing Cache for ibeidou.net
+2013-08-08 07:59:25,385 Py3-ExM ibeidou.net clear_cache INFO Cleared MailCache for ibeidou.net
+2013-08-08 07:59:25,385 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-08 07:59:26,271 Py3-ExM ghostunix.org _connect INFO Prefered MX server ASPMX.L.GOOGLE.COM connected.
+2013-08-08 07:59:27,048 Py3-ExM ghostunix.org send INFO Mail successfully sent to avastms@ghostunix.org.
+2013-08-08 07:59:27,049 Py3-ExM ghostunix.org _close INFO Closing smtp connection for ghostunix.org.
+2013-08-08 07:59:27,049 Py3-ExM ghostunix.org sender_routine INFO Transaction for ghostunix.org is over.
+2013-08-08 07:59:27,049 Py3-ExM ghostunix.org sender_routine INFO Sender Thread for domain ghostunix.org is terminating.
+2013-08-08 15:42:07,104 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from 382697807@qq.com to yeeyeung@bosp.ibeidou.net, aka yeeyeung@ibeidou.net .
+2013-08-08 15:42:07,104 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-08 15:42:07,105 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-08 15:42:07,105 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-08 15:42:07,106 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-08 15:42:07,106 Py3-ExM qq.com sender_routine INFO Sendlist empty. Clearing Cache for qq.com
+2013-08-08 15:42:07,106 Py3-ExM qq.com clear_cache INFO Cleared MailCache for qq.com
+2013-08-08 15:42:07,106 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-08 15:42:07,106 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-08 15:42:07,106 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-08 15:42:07,107 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-08 15:42:07,107 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-08 15:42:07,107 Py3-ExM ghostunix.org sender_routine INFO Sender Thread for domain ghostunix.org is up.
+2013-08-08 15:42:07,107 Py3-ExM ghostunix.org sender_routine INFO Sendlist empty. Clearing Cache for ghostunix.org
+2013-08-08 15:42:07,107 Py3-ExM ghostunix.org clear_cache INFO Cleared MailCache for ghostunix.org
+2013-08-08 15:42:07,108 Py3-ExM ghostunix.org sender_routine INFO Sender Thread for domain ghostunix.org is terminating.
+2013-08-08 15:42:07,108 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is up.
+2013-08-08 15:42:07,108 Py3-ExM gmail.com sender_routine INFO Sendlist empty. Clearing Cache for gmail.com
+2013-08-08 15:42:07,108 Py3-ExM gmail.com clear_cache INFO Cleared MailCache for gmail.com
+2013-08-08 15:42:07,108 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is terminating.
+2013-08-08 15:42:07,109 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-08 15:42:07,109 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-08 15:42:07,109 Py3-ExM ibeidou.net __init__ INFO ExSender started. 1 mails to ibeidou.net.
+2013-08-08 15:42:07,109 Py3-ExM ibeidou.net _connect INFO Initiating SMTP connection for domain ibeidou.net.
+2013-08-08 15:42:07,695 Py3-ExM ibeidou.net _connect INFO Prefered MX server mxbiz1.qq.com connected.
+2013-08-08 15:42:08,074 Py3-ExM ibeidou.net send ERROR Failure sending mail to yeeyeung@ibeidou.net. Remote MX Rejected.
+2013-08-08 15:42:08,075 Py3-ExM ibeidou.net _close INFO Closing smtp connection for ibeidou.net.
+2013-08-08 15:42:08,075 Py3-ExM ibeidou.net sender_routine WARNING 1 Mail Rejected by ibeidou.net
+2013-08-08 15:42:08,075 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-09 06:43:45,862 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from customer_service@jd.com to avastms@bosp.ibeidou.net, aka avastms@ghostunix.org .
+2013-08-09 06:43:45,863 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-09 06:43:45,863 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-09 06:43:45,863 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-09 06:43:45,864 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-09 06:43:45,864 Py3-ExM qq.com sender_routine INFO Sendlist empty. Clearing Cache for qq.com
+2013-08-09 06:43:45,864 Py3-ExM qq.com clear_cache INFO Cleared MailCache for qq.com
+2013-08-09 06:43:45,864 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-09 06:43:45,865 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-09 06:43:45,865 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-09 06:43:45,865 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-09 06:43:45,865 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-09 06:43:45,865 Py3-ExM ghostunix.org sender_routine INFO Sender Thread for domain ghostunix.org is up.
+2013-08-09 06:43:45,865 Py3-ExM ghostunix.org __init__ INFO ExSender started. 1 mails to ghostunix.org.
+2013-08-09 06:43:45,866 Py3-ExM ghostunix.org _connect INFO Initiating SMTP connection for domain ghostunix.org.
+2013-08-09 06:43:45,866 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is up.
+2013-08-09 06:43:45,866 Py3-ExM gmail.com sender_routine INFO Sendlist empty. Clearing Cache for gmail.com
+2013-08-09 06:43:45,866 Py3-ExM gmail.com clear_cache INFO Cleared MailCache for gmail.com
+2013-08-09 06:43:45,867 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is terminating.
+2013-08-09 06:43:45,867 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-09 06:43:45,867 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-09 06:43:45,867 Py3-ExM ibeidou.net sender_routine INFO Sendlist empty. Clearing Cache for ibeidou.net
+2013-08-09 06:43:45,867 Py3-ExM ibeidou.net clear_cache INFO Cleared MailCache for ibeidou.net
+2013-08-09 06:43:45,867 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.
+2013-08-09 06:43:46,268 Py3-ExM ghostunix.org _connect INFO Prefered MX server ASPMX.L.GOOGLE.COM connected.
+2013-08-09 06:43:46,525 Py3-ExM ghostunix.org send INFO Mail successfully sent to avastms@ghostunix.org.
+2013-08-09 06:43:46,525 Py3-ExM ghostunix.org _close INFO Closing smtp connection for ghostunix.org.
+2013-08-09 06:43:46,526 Py3-ExM ghostunix.org sender_routine INFO Transaction for ghostunix.org is over.
+2013-08-09 06:43:46,526 Py3-ExM ghostunix.org sender_routine INFO Sender Thread for domain ghostunix.org is terminating.
+2013-08-10 07:43:23,622 Py3-ExM ExRelay_smtpd process_message INFO ExRelay accepted mail from wyl923@qq.com to avastms@bosp.ibeidou.net, aka avastms@ibeidou.net .
+2013-08-10 07:43:23,622 Py3-ExM ExRelay_smtpd trigger_send INFO Acknowledged Incoming mail.
+2013-08-10 07:43:23,622 Py3-ExM MainThread loop INFO ExControl main loop is woken up.
+2013-08-10 07:43:23,622 Py3-ExM ExRelay_smtpd process_message INFO Triggerd ExControl for mail sending accross all domains.
+2013-08-10 07:43:23,623 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is up.
+2013-08-10 07:43:23,623 Py3-ExM qq.com sender_routine INFO Sendlist empty. Clearing Cache for qq.com
+2013-08-10 07:43:23,623 Py3-ExM qq.com clear_cache INFO Cleared MailCache for qq.com
+2013-08-10 07:43:23,624 Py3-ExM qq.com sender_routine INFO Sender Thread for domain qq.com is terminating.
+2013-08-10 07:43:23,624 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is up.
+2013-08-10 07:43:23,624 Py3-ExM 163.com sender_routine INFO Sendlist empty. Clearing Cache for 163.com
+2013-08-10 07:43:23,624 Py3-ExM 163.com clear_cache INFO Cleared MailCache for 163.com
+2013-08-10 07:43:23,624 Py3-ExM 163.com sender_routine INFO Sender Thread for domain 163.com is terminating.
+2013-08-10 07:43:23,625 Py3-ExM ghostunix.org sender_routine INFO Sender Thread for domain ghostunix.org is up.
+2013-08-10 07:43:23,625 Py3-ExM ghostunix.org sender_routine INFO Sendlist empty. Clearing Cache for ghostunix.org
+2013-08-10 07:43:23,625 Py3-ExM ghostunix.org clear_cache INFO Cleared MailCache for ghostunix.org
+2013-08-10 07:43:23,625 Py3-ExM ghostunix.org sender_routine INFO Sender Thread for domain ghostunix.org is terminating.
+2013-08-10 07:43:23,625 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is up.
+2013-08-10 07:43:23,625 Py3-ExM gmail.com sender_routine INFO Sendlist empty. Clearing Cache for gmail.com
+2013-08-10 07:43:23,625 Py3-ExM gmail.com clear_cache INFO Cleared MailCache for gmail.com
+2013-08-10 07:43:23,625 Py3-ExM gmail.com sender_routine INFO Sender Thread for domain gmail.com is terminating.
+2013-08-10 07:43:23,626 Py3-ExM MainThread loop INFO ExControl main loop now waits for incoming mail.
+2013-08-10 07:43:23,626 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is up.
+2013-08-10 07:43:23,626 Py3-ExM ibeidou.net __init__ INFO ExSender started. 1 mails to ibeidou.net.
+2013-08-10 07:43:23,626 Py3-ExM ibeidou.net _connect INFO Initiating SMTP connection for domain ibeidou.net.
+2013-08-10 07:43:24,218 Py3-ExM ibeidou.net _connect INFO Prefered MX server mxbiz1.qq.com connected.
+2013-08-10 07:43:24,612 Py3-ExM ibeidou.net send ERROR Failure sending mail to avastms@ibeidou.net. Remote MX Rejected.
+2013-08-10 07:43:24,612 Py3-ExM ibeidou.net _close INFO Closing smtp connection for ibeidou.net.
+2013-08-10 07:43:24,612 Py3-ExM ibeidou.net sender_routine WARNING 1 Mail Rejected by ibeidou.net
+2013-08-10 07:43:24,612 Py3-ExM ibeidou.net sender_routine INFO Sender Thread for domain ibeidou.net is terminating.

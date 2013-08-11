@@ -1,0 +1,612 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Dup",
+				"DuplicateKeyError"
+			],
+			[
+				"ExM",
+				"ExM_add_rcpt"
+			],
+			[
+				"F",
+				"FormDataError"
+			],
+			[
+				"get",
+				"get_user"
+			],
+			[
+				"add",
+				"add_user"
+			],
+			[
+				"signin",
+				"signin-form"
+			],
+			[
+				"def",
+				"def	Function"
+			],
+			[
+				"form",
+				"fromaddr"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"asse",
+				"AssertionError"
+			],
+			[
+				"final",
+				"finally"
+			],
+			[
+				"time",
+				"time_to_die"
+			],
+			[
+				"sender",
+				"sender_routine"
+			],
+			[
+				"Mx",
+				"MXHostNotReachable"
+			],
+			[
+				"mail",
+				"mailCache"
+			],
+			[
+				"thread",
+				"thread_Relay"
+			],
+			[
+				"ExR",
+				"ExRelay"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"rc",
+				"rcpttos"
+			],
+			[
+				"valida",
+				"validateSession"
+			],
+			[
+				"f",
+				"for	for (…) {…}"
+			],
+			[
+				"fo",
+				"for	for (…) {…}"
+			],
+			[
+				"end",
+				"endcontacts"
+			],
+			[
+				"res",
+				"resources"
+			],
+			[
+				"stat",
+				"staticSalt"
+			],
+			[
+				"de",
+				"defs	Method"
+			],
+			[
+				"signou",
+				"signoutAction"
+			],
+			[
+				"Da",
+				"IllegalData"
+			],
+			[
+				"try",
+				"try	Try/Except"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "views/warper.tpl",
+			"settings":
+			{
+				"buffer_size": 4928,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ExM.py",
+			"settings":
+			{
+				"buffer_size": 8765,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "relay.py",
+			"settings":
+			{
+				"buffer_size": 192,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/welcome.tpl",
+			"settings":
+			{
+				"buffer_size": 631,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "smtpd.py",
+			"settings":
+			{
+				"buffer_size": 30456,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bosp.py",
+			"settings":
+			{
+				"buffer_size": 6286,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/ExM.tpl",
+			"settings":
+			{
+				"buffer_size": 1545,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/alert.tpl",
+			"settings":
+			{
+				"buffer_size": 269,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/avastms/workspace/smtpd/views/signup.tpl",
+		"/home/avastms/workspace/smtpd/views/ExM.tpl",
+		"/home/avastms/workspace/smtpd/relay.py",
+		"/home/avastms/workspace/smtpd/sbencode.py",
+		"/home/avastms/workspace/smtpd/sb.py",
+		"/home/avastms/workspace/smtpd/smtpd_new.py",
+		"/home/avastms/workspace/smtpd/smtpd.py",
+		"/usr/lib64/python3.2/smtplib.py",
+		"/usr/lib64/python3.2/smtpd.py",
+		"/home/avastms/桌面/test.py",
+		"/home/avastms/workspace/ldocean/webauth.sublime-project",
+		"/home/avastms/workspace/egowork/prototype/importcsv.py"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bosp",
+			"ExAdmin",
+			"form",
+			"    <",
+			"get_real_addr",
+			"valid_rcpt_func",
+			"received",
+			"finalAddr",
+			"resources['rcpt']",
+			"socket.error",
+			"sendqueue",
+			"self.fqdn",
+			"_getaddr",
+			"self._getaddr",
+			"_getparams",
+			"_getaddr",
+			"get_angle_addr",
+			"get_addr_spec",
+			"ehlo",
+			"smtp_",
+			"EHLO",
+			"ETRN",
+			"EHLO",
+			"ETRN",
+			"method",
+			"etrn",
+			"_getaddr",
+			"get_angle_addr",
+			"get_addr_spec",
+			"rcpt",
+			"ehlo",
+			"__getaddr",
+			"dns",
+			"process",
+			"peer",
+			"received",
+			"self.peer",
+			"form",
+			"_i",
+			"onlyHave",
+			"select",
+			"bson",
+			"insert_comment",
+			"publish_comm",
+			"typical_find"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"checkForm"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "views/warper.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4928,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1531,
+								1531
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ExM.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8765,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6842,
+								6842
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2730.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "relay.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								108,
+								108
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "views/welcome.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 631,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								556,
+								556
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "smtpd.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2668,
+								2668
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1440.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "bosp.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4490,
+								4490
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2044.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "views/ExM.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1545,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "views/alert.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 269,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								103,
+								103
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": ".mailrelay.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 450.0,
+		"selected_items":
+		[
+		],
+		"width": 342.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 135.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
