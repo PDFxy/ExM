@@ -274,7 +274,7 @@ class SMTPChannel(asynchat.async_chat):
 
     # Overrides base class for convenience
     def push(self, msg):
-        asynchat.async_chat.push(self, bytes(msg + '\r\n', 'ascii'))
+        asynchat.async_chat.push(self, bytes(msg + '\r\n', 'utf-8'))
 
     # Implementation of base class abstract method
     def collect_incoming_data(self, data):
@@ -292,7 +292,7 @@ class SMTPChannel(asynchat.async_chat):
     # Implementation of base class abstract method
     def found_terminator(self):
         line = EMPTYSTRING.join(self.received_lines)
-        print('Data:', repr(line), file=DEBUGSTREAM)
+#        print('Data:', repr(line), file=DEBUGSTREAM)
         self.received_lines = []
         if self.smtp_state == self.COMMAND:
             sz, self.num_bytes = self.num_bytes, 0
@@ -329,13 +329,16 @@ class SMTPChannel(asynchat.async_chat):
                 return
             # Remove extraneous carriage returns and de-transparency according
             # to RFC 5321, Section 4.5.2.
-            data = []
-            for text in line.split('\r\n'):
-                if text and text[0] == '.':
-                    data.append(text[1:])
-                else:
-                    data.append(text)
-            self.received_data = NEWLINE.join(data)
+
+            #data = []
+            #for text in line.split('\r\n'):
+            #    if text and text[0] == '.':
+            #        data.append(text[1:])
+            #    else:
+            #        data.append(text)
+            #self.received_data = NEWLINE.join(data)
+            print('ok till replace ..')
+            self.received_data= line.replace('\r\n..\r\n','\r\n.\r\n')
             status = self.smtp_server.process_message(self.peer,
                                                       self.mailfrom,
                                                       self.rcpttos,

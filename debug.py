@@ -30,6 +30,6 @@ class BeidouSpecialControl(ExM.ExControl):
 
 if __name__ == '__main__':
 	try:
-		BeidouSpecialControl(('do.jhxs.org',25),3,customsender= BeidouSpecialSender).start()
+		BeidouSpecialControl(('localhost',8025),3,customsender= BeidouSpecialSender).start()
 	except KeyboardInterrupt:
 		ExM.logger.info('Got ^C. ExControl killself.')

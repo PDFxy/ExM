@@ -6,6 +6,7 @@ import sys
 import DNS
 import logging
 from time import time,ctime
+from copy import deepcopy
 
 from pymongo import MongoClient
 
@@ -37,6 +38,12 @@ def add_header(data,localaddr,peer,sender):
 		fqdn= 'unknown'
 	headline="Return-Path: <%s>\nReceived: from %s (%s [%s])\n\tby %s (Python3-ExM) with SMTP id %s\n\tfor <!\t!\t!ExRusr!\t!\t!>; %s +0000 (UTC)\n" % (sender,fqdn,fqdn,addr,localaddr,'NOTSET',ctime(time()))
 	return headline+data
+
+class DictWithLock(dict):
+	"""docstring for DictWithLock"""
+	def __init__(self, *arg,**kwarg):
+		super(DictWithLock, self).__init__(*arg,**kwarg)
+		self.lock = threading.Lock()
 
 def getChannelClass(validate_func):
 	class ExRChannel(smtpd.SMTPChannel):
@@ -88,7 +95,7 @@ def getChannelClass(validate_func):
 				self.push('501 Syntax: RCPT TO: <address>')
 				return
 			self.rcpttos.append(address)
-			print('recips:', self.rcpttos, file=smtpd.DEBUGSTREAM)
+			print('recips:', self.rcpttos)
 			self.push('250 OK')
 	return ExRChannel
 
@@ -105,6 +112,10 @@ def getRelayClass(validate_func,trigger_func):
 			self.fqdn=smtpd.socket.getfqdn()
 	
 		def process_message(self, peer, mailfrom, rcpttos, data):
+			logger.info('Incoming Mail From %s ! Hands on relay servo.' % mailfrom)
+			if not mailfrom or mailfrom=='<>' or (mailfrom in rcpttos):
+				logger.warn('ExRelay rejected mail from %s to prevent looping mail.' % mailfrom)
+				return
 			data= add_header(data,self.fqdn,peer,mailfrom)
 			rcpd= ''
 			final=tuple()
@@ -117,20 +128,21 @@ def getRelayClass(validate_func,trigger_func):
 					return None
 				final= (mailfrom,rcpt_real,data.replace('!\t!\t!ExRusr!\t!\t!',rcpt), rcpt)
 				rcpd= domain(rcpt_real)
+				self.mailCache.lock.acquire()
 				try:
 					self.mailCache[rcpd].append(final)
 				except KeyError:
 					self.mailCache[rcpd]= [final,]
 				finally:
 					logger.info('ExRelay accepted mail from %s to %s, aka %s .' % (mailfrom,rcpt,rcpt_real))
+				self.mailCache.lock.release()
 			self.trigger_send()
-			logger.info('Triggerd ExControl for mail sending accross all domains.')
+			logger.info('Triggerd ExControl for mail sending accross all domains. Hands off from relay servo.')
 			return None
 	return ExRelay
 
 class MXHostNotReachable(Exception):
 	pass
-		
 
 class ExSender(object):
 	"""docstring for ExRsender"""
@@ -142,13 +154,17 @@ class ExSender(object):
 		self.smtpsrv= None
 		self.refused= []
 
-	def _connect(self):
-		logger.info('Initiating SMTP connection for domain %s.' % self.domain)	
+	def _mx_lookup(self):
 		try:
 			self.mxHosts= tuple(y for x,y in sorted((z for z in DNS.mxlookup(self.domain) if type(z) == tuple)))
 		except DNS.Base.ServerError:
 			logger.error('Could not resolve MX records for %s from DNS !' % self.domain)	
 			raise MXHostNotReachable
+
+	def _connect(self):
+		logger.info('Initiating SMTP connection for domain %s.' % self.domain)	
+		self._mx_lookup()
+
 		for host in self.mxHosts:
 			try:
 				self.smtpsrv=smtplib.SMTP(host)
@@ -175,6 +191,7 @@ class ExSender(object):
 			self._connect()
 		for item in self.sendlist:
 			try:
+				logger.info('Trying to send mail to %s.' % item[1])
 				self.smtpsrv.sendmail(item[0],item[1],item[2])
 			except smtplib.SMTPSenderRefused:
 				logger.warn('Failure sending mail from %s to %s. Remote MX refused sender.' % (item[0], item[1]) )
@@ -198,11 +215,13 @@ class ExSender(object):
 			else:
 				logger.info('Mail successfully sent to %s.' % item[1])
 			finally:
-				self.sendlist.remove(item)
+				pass
+				#self.sendlist.remove(item)
 			try:
+				logger.info('Performing SMTP RSET.')
 				self.smtpsrv.rset()
 			except smtplib.SMTPServerDisconnected:
-				logger.warn('Remote MX cut line. Trying reconnect.' % (item[0], item[1]) )
+				logger.warn('Remote MX cut line. Trying to reconnect.')
 				self._close()
 				self._connect()
 		self._close()
@@ -217,32 +236,42 @@ class ExControl(object):
 	senderClass= ExSender
 	
 	"""docstring for ExControl"""
-	def __init__(self, localaddr, maxthread, dbinfo=dbinfo):
+	def __init__(self, localaddr, maxthread, customsender=None, dbinfo=dbinfo, shared_mongo_connection=None):
 		logger.info('ExControl Starting.. Maxthread %d on %s:%d.' % (maxthread,localaddr[0],localaddr[1]))
 		super(ExControl, self).__init__()
 		self.localaddr= localaddr
 		self.dbinfo= dbinfo
+		if customsender:
+			self.senderClass= customsender
+		else:
+			pass
 		self.relay= None
 		self.thread_Relay= None
 		self.resources= {}
 		self.mailCache= {}
+		self.relayCache= DictWithLock()
 		self.rejected= {}
-		self.workthread= []
+#		self.workthread= []
 		self.time_to_die= False
 		self.relayClass= getRelayClass(self.get_real_addr,self.trigger_send)
 		self.semaphore= threading.Semaphore(maxthread)
 		self.event= threading.Event()
-		self._init_db()
+		self.lock= threading.Lock()
+		self._init_db(shared_mongo_connection)
 		
-	def _init_db(self):
+	def _init_db(self,shared_conn):
 		logger.info('Connecting MongoDB ')
-		self.resources['conn']= MongoClient(self.dbinfo['host'],self.dbinfo['port'])
+		if shared_conn:
+			self.resources['conn']= shared_conn
+		else:
+			self.resources['conn']= MongoClient(self.dbinfo['host'],self.dbinfo['port'])
 		self.resources['db']= self.resources['conn'][self.dbinfo['database']]
 		self.resources['rcpt']= self.resources['db'][self.dbinfo['rcpt_coll']]
+		
 
 	def _init_relay(self):
 		logger.info('Initiating Relay Thread.')
-		self.relay= self.relayClass(self.localaddr,mailCache=self.mailCache)
+		self.relay= self.relayClass(self.localaddr,mailCache=self.relayCache)
 		self.thread_Relay= threading.Thread(name="ExRelay_smtpd",target=asyncore.loop)
 		self.thread_Relay.daemon= True
 		self.thread_Relay.start()
@@ -260,15 +289,15 @@ class ExControl(object):
 			return final
 
 	def trigger_send(self):
-		self.event.set()
 		logger.info('Acknowledged Incoming mail.')
+		self.event.set()
 
 	def clear_cache(self, domain=None):
 		if domain:
 			del(self.mailCache[domain])
 			logger.info('Cleared MailCache for %s' % domain)
 		else:
-			self.mailCache= {}
+			self.mailCache.clear()
 			logger.info('Cleared MailCache for all domains.')
 
 	def sender_routine(self, domain, sendlist):
@@ -305,6 +334,7 @@ class ExControl(object):
 	def loop(self):
 		logger.info('ExControl main loop starting.')
 		tmpthread= None
+		threadlist= []
 		while True:
 			if self.time_to_die:
 				return
@@ -313,15 +343,23 @@ class ExControl(object):
 				self.event.wait()
 				logger.info('ExControl main loop is woken up.')
 				self.event.clear()
+				logger.info('Forking relayCache.')
+				self.relayCache.lock.acquire()
+				self.mailCache= self.relayCache.copy()
+				logger.info('Clearing relayCache.')
+				self.relayCache.clear()
+				self.relayCache.lock.release()
 			for domain in self.mailCache:
 				tmpthread= threading.Thread(target=self.sender_routine, name=domain, args=(domain,self.mailCache[domain]))
+				threadlist.append(tmpthread)
 				self.semaphore.acquire()
 				tmpthread.start()
-				self.workthread.append(tmpthread)
-			for thread in self.workthread:
+			for thread in threadlist:
+				logger.info('ExControl main loop awaits for thread %s to terminate.' % thread.name)
 				thread.join()
-			self.workthread=[]
-			self.clear_cache()
+			threadlist= []
+			#self.clear_cache()
+			logger.info('ExControl main loop cycle completed.')
 
 	def start(self):
 		self._init_relay()

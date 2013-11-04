@@ -76,7 +76,12 @@ class BOSPAdmin(object):
 		self.resources= {}
 		self._init_db()
 
+	def get_mongo_conn(self):
+		return self.resources['conn']
 	
+	def get_mongo_db(self):
+		return self.resources['db']
+
 	def _init_db(self):
 		self.resources['conn']= pymongo.MongoClient(self.dbinfo['host'],self.dbinfo['port'])
 		self.resources['db']= self.resources['conn'][self.dbinfo['database']]
@@ -163,7 +168,7 @@ def signupAction():
 			'type':'danger',
 			'name': 'dataerr',
 			'title': '',
-			'content': '<strong>Duplicated Email address.</strong>' ,
+			'content': '<strong>Duplicated Email address, use another one.</strong>' ,
 		}
 		raise bottle.HTTPError(406,msg= bottle.template('alert.tpl',**local))
 	else:
